@@ -1,0 +1,106 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2024 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+[02:12:50.163153] Configured Lic search path (22.01-s003): 5280@172.31.52.241
+
+Version: 22.17-s071_1, built Wed Sep 11 20:37:05 PDT 2024
+Options: 
+Date:    Wed Jul 08 02:12:50 2026
+Host:    kopo-seongnam (x86_64 w/Linux 3.10.0-1160.el7.x86_64) (20cores*80cpus*2physical cpus*Intel(R) Xeon(R) Gold 5218R CPU @ 2.10GHz 28160KB) (394624392KB)
+PID:     201505
+OS:      CentOS Linux release 7.9.2009 (Core)
+
+Checking out license: Genus_Synthesis
+[02:12:50.191969] Periodic Lic check successful
+[02:12:50.191977] Feature usage summary:
+[02:12:50.191977] Genus_Synthesis
+
+
+
+***********************************************************************************************************
+***********************************************************************************************************
+
+
+
+Finished executable startup (1 second elapsed).
+
+Loading tool scripts...
+Finished loading tool scripts (12 seconds elapsed).
+
+WARNING: This version of the tool is 663 days old.
+@genus:root: 1> gui_raise
+@genus:root: 2> set_db init_lib_search_path ../../1_LIB
+  Setting attribute of root '/': 'init_lib_search_path' = ../../1_LIB
+1 ../../1_LIB
+@genus:root: 3> set_db init_hdl_search_path ../../../4_COMB_LOGIC/1_MUX
+  Setting attribute of root '/': 'init_hdl_search_path' = ../../../4_COMB_LOGIC/1_MUX
+1 ../../../4_COMB_LOGIC/1_MUX
+@genus:root: 4> read_lib slow_vdd1v0_basicCells.lib
+Error   : File error. [FILE-100] [::legacy::set_attribute]
+        : Cannot open file 'slow_vdd1v0_basicCells.lib'
+        : Make sure that the file is a readable regular file and has the specified name.
+Error   : A library file does not exist. [LBR-68] [::legacy::set_attribute]
+        : File 'slow_vdd1v0_basicCells.lib' could not be found. File '<none>' was the last file that was successfully read in.
+        : Make sure that the library file exists or check for a typo in the file name.
+Error   : The data value for this attribute is invalid. [TUI-24] [::legacy::set_attribute]
+        : The value '  { slow_vdd1v0_basicCells.lib } ' cannot be set for attribute 'library'.
+        : To see the usage/description for this attribute, type '::legacy::set_attribute -h <attr_name> *' (in legacy UI mode) or 'help * <attr_name> -detail' (in CUI mode).
+1
+@genus:root: 5> read_libs slow_vdd1v0_basicCells.lib
+Error   : File error. [FILE-100] [::legacy::set_attribute]
+        : Cannot open file 'slow_vdd1v0_basicCells.lib'
+Error   : A library file does not exist. [LBR-68] [::legacy::set_attribute]
+        : File 'slow_vdd1v0_basicCells.lib' could not be found. File '<none>' was the last file that was successfully read in.
+Error   : The data value for this attribute is invalid. [TUI-24] [::legacy::set_attribute]
+        : The value '  { slow_vdd1v0_basicCells.lib } ' cannot be set for attribute 'library'.
+1
+@genus:root: 6> set_db init_lib_search_path ../../../1_LIB
+  Setting attribute of root '/': 'init_lib_search_path' = ../../../1_LIB
+1 ../../../1_LIB
+@genus:root: 7> read_libs slow_vdd1v0_basicCells.lib
+
+  Message Summary for Library slow_vdd1v0_basicCells.lib:
+  *******************************************************
+  Missing a function attribute in the output pin definition. [LBR-518]: 1
+  *******************************************************
+ 
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 0.900000, 125.000000) in library 'slow_vdd1v0_basicCells.lib'.
+        : The nominal operating condition is represented, either by the nominal PVT values specified in the library source (via nom_process,nom_voltage and nom_temperature respectively), or by the default PVT values (1.0,1.0,1.0).
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'ANTENNA' must have an output pin.
+        : Add the missing output pin(s), then reload the library. Else the library cell will be marked as timing model i.e. unusable. Timing_model means that the cell does not have any defined function. If there is no output pin, Genus will mark library cell as unusable i.e. the attribute 'usable' will be marked to 'false' on the libcell. Therefore, the cell is not used for mapping and it will not be picked up from the library for synthesis. If you query the attribute 'unusable_reason' on the libcell; result will be: 'Library cell has no output pins.'Note: The message LBR-9 is only for the logical pins and not for the power_ground pins. Genus will depend upon the output function defined in the pin group (output pin) of the cell, to use it for mapping. The pg_pin will not have any function defined.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'ANTENNA' must have an output pin.
+@genus:root: 8> read_hdl gpio_mux.v
+Warning : Cannot open file. [VLOGPT-650]
+        : File 'gpio_mux.v'.
+        : The specified file could not be opened.  Check the value of the init_hdl_search_path attribute.
+@genus:root: 9> set_db init_hdl_search_path ../../../../4_COMB_LOGIC/1_MUX
+  Setting attribute of root '/': 'init_hdl_search_path' = ../../../../4_COMB_LOGIC/1_MUX
+1 ../../../../4_COMB_LOGIC/1_MUX
+@genus:root: 10> read_hdl gpio_mux.v
+Warning : Cannot open file. [VLOGPT-650]
+        : File 'gpio_mux.v'.
+@genus:root: 11> read_hdl gpio_mux.v
+Warning : Cannot open file. [VLOGPT-650]
+        : File 'gpio_mux.v'.
+@genus:root: 12> set_db init_hdl_search_path ../../../4_COMB_LOGIC/1_MUX
+  Setting attribute of root '/': 'init_hdl_search_path' = ../../../4_COMB_LOGIC/1_MUX
+1 ../../../4_COMB_LOGIC/1_MUX
+@genus:root: 13> read_hdl gpio_mux.v
+Warning : Cannot open file. [VLOGPT-650]
+        : File 'gpio_mux.v'.
+@genus:root: 14> cl
+ambiguous command name "cl": clear clock close
+@genus:root: 15> clear
+@genus:root: 16> exit
+
+Lic Summary:
+[02:27:07.338834] Cdslmd servers: kopo-seongnam
+[02:27:07.338858] Feature usage summary:
+[02:27:07.338859] Genus_Synthesis
+
+Normal exit.
