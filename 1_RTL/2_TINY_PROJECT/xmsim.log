@@ -1,0 +1,63 @@
+xmsim(64): 22.03-s012: (c) Copyright 1995-2023 Cadence Design Systems, Inc.
+TOOL:	xmsim(64)	22.03-s012: Started on Jul 09, 2026 at 04:33:04 KST
+xmsim
+    -MESS
+    tb_counter6_down
+    -gui
+
+xmsim: *W,NOMTDGUI: Multi-Threaded Dumping is disabled for interactive debug mode.
+
+-------------------------------------
+Relinquished control to SimVision...
+xcelium> 
+xcelium> database -open waves -into waves.shm -default
+Created default SHM database waves
+xcelium> probe -create -shm tb_counter6_down.dut.clk tb_counter6_down.dut.rst_n tb_counter6_down.dut.o_count tb_counter6_down.dut.i_en
+Created probe 1
+xcelium> run
+t=0 | rst_n=0 i_en=0 | o_count=x
+t=5000 | rst_n=0 i_en=0 | o_count=5
+t=20000 | rst_n=1 i_en=0 | o_count=5
+t=50000 | rst_n=1 i_en=1 | o_count=5
+t=55000 | rst_n=1 i_en=1 | o_count=4
+t=65000 | rst_n=1 i_en=1 | o_count=3
+t=75000 | rst_n=1 i_en=1 | o_count=2
+t=85000 | rst_n=1 i_en=1 | o_count=1
+t=95000 | rst_n=1 i_en=1 | o_count=0
+t=105000 | rst_n=1 i_en=1 | o_count=5
+t=115000 | rst_n=1 i_en=1 | o_count=4
+t=125000 | rst_n=1 i_en=1 | o_count=3
+t=135000 | rst_n=1 i_en=1 | o_count=2
+t=145000 | rst_n=1 i_en=1 | o_count=1
+t=155000 | rst_n=1 i_en=1 | o_count=0
+t=165000 | rst_n=1 i_en=1 | o_count=5
+t=175000 | rst_n=1 i_en=1 | o_count=4
+t=185000 | rst_n=1 i_en=1 | o_count=3
+t=195000 | rst_n=1 i_en=1 | o_count=2
+t=205000 | rst_n=1 i_en=1 | o_count=1
+t=215000 | rst_n=1 i_en=1 | o_count=0
+t=225000 | rst_n=1 i_en=1 | o_count=5
+t=235000 | rst_n=1 i_en=1 | o_count=4
+t=245000 | rst_n=1 i_en=1 | o_count=3
+t=250000 | rst_n=1 i_en=0 | o_count=3
+t=280000 | rst_n=1 i_en=1 | o_count=3
+t=285000 | rst_n=1 i_en=1 | o_count=2
+t=295000 | rst_n=1 i_en=1 | o_count=1
+t=305000 | rst_n=1 i_en=1 | o_count=0
+t=315000 | rst_n=1 i_en=1 | o_count=5
+t=325000 | rst_n=1 i_en=1 | o_count=4
+t=335000 | rst_n=1 i_en=1 | o_count=3
+t=345000 | rst_n=1 i_en=1 | o_count=2
+t=355000 | rst_n=1 i_en=1 | o_count=1
+t=365000 | rst_n=1 i_en=1 | o_count=0
+t=375000 | rst_n=1 i_en=1 | o_count=5
+t=385000 | rst_n=1 i_en=1 | o_count=4
+t=395000 | rst_n=1 i_en=1 | o_count=3
+t=405000 | rst_n=1 i_en=1 | o_count=2
+t=415000 | rst_n=1 i_en=1 | o_count=1
+t=425000 | rst_n=1 i_en=1 | o_count=0
+Simulation complete via $finish(1) at time 430 NS + 0
+./tb_counter6_down.v:27 		#150 	$finish			;
+xcelium> ^C
+xcelium> exit
+TOOL:	xmsim(64)	22.03-s012: Exiting on Jul 09, 2026 at 04:37:47 KST  (total: 00:04:43)

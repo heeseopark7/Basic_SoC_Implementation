@@ -1,0 +1,41 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2022 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v22.17-s086_1, built Tue Sep 24 10:51:50 PDT 2024
+Options:	-stylus 
+Date:		Thu Jul  9 04:43:03 2026
+Host:		kopo-seongnam (x86_64 w/Linux 3.10.0-1160.el7.x86_64) (20cores*80cpus*Intel(R) Xeon(R) Gold 5218R CPU @ 2.10GHz 28160KB)
+OS:		CentOS Linux 7 (Core)
+
+License:
+		[04:43:03.163185] Configured Lic search path (22.01-s003): 5280@172.31.52.241
+
+		invs	Innovus Implementation System	22.1	Denied
+		invsb	Innovus Implementation System Basic	22.1	checkout succeeded
+		4 CPU jobs allowed with the current license(s). Use set_multi_cpu_usage to set your required CPU count.
+**ERROR: (IMPOAX-8053):	Could not open shared library libinnovusoax22.so : liboaPrivateCDS.so: cannot open shared object file: No such file or directory.
+**ERROR: (IMPOAX-8053):	Could not open shared library libcdsSkillPcell.so : /tools/cadence/DDI221/INNOVUS221/tools.lnx86/innovus/bin/64bit/../../../lib/64bit/libcdsSkillPcell.so: undefined symbol: _ZTIN12OpenAccess_413oaFSComponentE.
+**ERROR: (IMPOAX-8033):	OpenAccess features will be disabled in this session.
+
+
+Create and set the environment variable TMPDIR to /home/hah013/Basic_SoC_Implementation/3_SYN/5_SYN/2_TINY_PROJECT/outputs/innovus_temp_309593_1e754937-824e-4484-b354-27621730c70b_kopo-seongnam_hah013_6jgqRV.
+
+Change the soft stacksize limit to 0.2%RAM (770 mbytes). Set global soft_stack_size_limit to change the value.
+[INFO] Loading PVS 20.11 fill procedures
+
+**INFO:  MMMC transition support version v31-84 
+
+@innovus 1> gui_select -point {-0.00500 0.08100}
+@innovus 2> 
+--------------------------------------------------------------------------------
+Exiting Innovus on Thu Jul  9 04:43:47 2026
+  Total CPU time:     0:00:31
+  Total real time:    0:00:46
+  Peak memory (main): 1347.54MB
+
+
+*** Memory Usage v#1 (Current mem = 1621.113M, initial mem = 654.375M) ***
+*** Message Summary: 0 warning(s), 3 error(s)
+
+--- Ending "Innovus" (totcpu=0:00:31.2, real=0:00:44.0, mem=1621.1M) ---
