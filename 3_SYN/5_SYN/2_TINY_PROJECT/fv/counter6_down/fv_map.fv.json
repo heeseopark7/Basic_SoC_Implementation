@@ -245,20 +245,20 @@
 "object":"/designs/counter6_down/instances_seq/o_count_reg[0]",
 "type":"instance"},
 {"index": "1", 
- "date": "Wed Jul 08 19:47:59 UTC 2026",
- "seconds": 1783540079.2850509,
+ "date": "Thu Jul 09 09:18:19 UTC 2026",
+ "seconds": 1783588699.377421,
  "netlist": "fv/counter6_down/fv_map.v.gz", 
  "netlist_exists": "1", 
  "netlist_normalize": "/home/hah013/Basic_SoC_Implementation/3_SYN/5_SYN/2_TINY_PROJECT/fv/counter6_down/fv_map.v.gz", 
- "netlist_mtime": "1783540077", 
- "netlist_timestamp": "Wed Jul 08 19:47:57 UTC 2026", 
- "netlist_size": "553", 
- "netlist_cksum": "2097927334", 
+ "netlist_mtime": "1783588697", 
+ "netlist_timestamp": "Thu Jul 09 09:18:17 UTC 2026", 
+ "netlist_size": "550", 
+ "netlist_cksum": "1227752536", 
  "design_name": "counter6_down", 
  "synth_workdir": "/home/hah013/Basic_SoC_Implementation/3_SYN/5_SYN/2_TINY_PROJECT", 
  "synthesis_command":"",
  "current_label": "fv_map", 
  "previous_label": "rtl", 
- "write_verif_file_runtime": 1.33506 
+ "write_verif_file_runtime": 1.6960339999999998 
  }
 ]
