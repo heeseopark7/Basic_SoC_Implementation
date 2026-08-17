@@ -1,0 +1,371 @@
+[08/18 07:20:15      0s] 
+[08/18 07:20:15      0s] Cadence Innovus(TM) Implementation System.
+[08/18 07:20:15      0s] Copyright 2022 Cadence Design Systems, Inc. All rights reserved worldwide.
+[08/18 07:20:15      0s] 
+[08/18 07:20:15      0s] Version:	v22.17-s086_1, built Tue Sep 24 10:51:50 PDT 2024
+[08/18 07:20:15      0s] Options:	-stylus 
+[08/18 07:20:15      0s] Date:		Tue Aug 18 07:20:15 2026
+[08/18 07:20:15      0s] Host:		kopo-seongnam (x86_64 w/Linux 3.10.0-1160.el7.x86_64) (20cores*80cpus*Intel(R) Xeon(R) Gold 5218R CPU @ 2.10GHz 28160KB)
+[08/18 07:20:15      0s] OS:		CentOS Linux 7 (Core)
+[08/18 07:20:15      0s] 
+[08/18 07:20:15      0s] License:
+[08/18 07:20:15      0s] 		[07:20:15.158585] Configured Lic search path (22.01-s003): 5280@localhost
+[08/18 07:20:15      0s] 
+[08/18 07:20:15      0s] 		invs	Innovus Implementation System	22.1	Denied
+[08/18 07:20:15      0s] 		invsb	Innovus Implementation System Basic	22.1	checkout succeeded
+[08/18 07:20:15      0s] 		4 CPU jobs allowed with the current license(s). Use set_multi_cpu_usage to set your required CPU count.
+[08/18 07:20:29     13s] 
+[08/18 07:20:29     13s] 
+[08/18 07:20:35     18s] Reset Parastics called with the command setExtractRCMode -reset@(#)CDS: Innovus v22.17-s086_1 (64bit) 09/24/2024 10:51 (Linux 3.10.0-693.el7.x86_64)
+[08/18 07:20:37     21s] @(#)CDS: NanoRoute 22.17-s086_1 NR240905-1647/22_17-UB (database version 18.20.629) {superthreading v2.20}
+[08/18 07:20:37     21s] @(#)CDS: AAE 22.17-s013 (64bit) 09/24/2024 (Linux 3.10.0-693.el7.x86_64)
+[08/18 07:20:37     21s] @(#)CDS: CTE 22.17-s017_1 () Sep 12 2024 04:53:54 ( )
+[08/18 07:20:37     21s] @(#)CDS: SYNTECH 22.17-s006_1 () Aug 12 2024 03:52:27 ( )
+[08/18 07:20:37     21s] @(#)CDS: CPE v22.17-s051
+[08/18 07:20:37     21s] @(#)CDS: IQuantus/TQuantus 21.2.2-s369 (64bit) Tue May 7 14:30:42 PDT 2024 (Linux 3.10.0-693.el7.x86_64)
+[08/18 07:20:37     21s] @(#)CDS: OA 22.60-p095 Wed Apr 17 03:30:14 2024
+[08/18 07:20:37     21s] @(#)CDS: SGN 22.20-d001 (02-Jan-2023) (64 bit executable, TkQt5.9.1)
+[08/18 07:20:37     21s] @(#)CDS: RCDB 11.15.0
+[08/18 07:20:37     21s] @(#)CDS: STYLUS 22.15-s003_1 (04/04/2024 05:58 PDT)
+[08/18 07:20:37     21s] @(#)CDS: IntegrityPlanner-22.17-15746 (22.17) (2024-07-03 11:16:10+0800)
+[08/18 07:20:37     21s] Create and set the environment variable TMPDIR to /home/hah013/Basic_SoC_Implementation/5_APR/7_APR/1_TASK/1_LOGIC_CIRCUIT/2_Seq_logic/1_SR_latch_with_NOR_gates/innovus_temp_282267_fa27eef1-fc25-4961-b9d6-4657a5d60d75_kopo-seongnam_hah013_AZzUnF.
+
+[08/18 07:20:37     21s] Create and set the environment variable TMPDIR to /home/hah013/Basic_SoC_Implementation/5_APR/7_APR/1_TASK/1_LOGIC_CIRCUIT/2_Seq_logic/1_SR_latch_with_NOR_gates/innovus_temp_282267_fa27eef1-fc25-4961-b9d6-4657a5d60d75_kopo-seongnam_hah013_AZzUnF.
+[08/18 07:20:37     21s] 
+[08/18 07:20:38     21s] Change the soft stacksize limit to 0.2%RAM (770 mbytes). Set global soft_stack_size_limit to change the value.
+[08/18 07:20:40     23s] 
+[08/18 07:20:40     23s] **INFO:  MMMC transition support version v31-84 
+[08/18 07:20:40     23s] 
+[08/18 07:20:43     26s] @innovus 1> set_db init_power_nets VDD
+[08/18 07:22:05     48s] @innovus 2> set_db init_ground_nets VSS
+[08/18 07:22:05     48s] @innovus 3> #################################
+[08/18 07:22:05     48s] read_mmmc sample.view
+[08/18 07:22:05     48s] #################################
+[08/18 07:22:05     48s] #@ Begin verbose source sample.view (pre)
+[08/18 07:22:05     48s] @file 1:
+[08/18 07:22:05     48s] @@file 2: create_library_set -name max_timing\
+[08/18 07:22:05     48s]    -timing /home/hah013/Basic_SoC_Implementation/5_APR/1_LIB/slow_vdd1v0_basicCells.lib
+[08/18 07:22:05     48s] @file 4:
+[08/18 07:22:05     48s] @@file 5: create_library_set -name min_timing\
+[08/18 07:22:05     48s]    -timing /home/hah013/Basic_SoC_Implementation/5_APR/1_LIB/fast_vdd1v0_basicCells.lib
+[08/18 07:22:05     48s] @file 7:
+[08/18 07:22:05     48s] @@file 8: create_timing_condition -name default_mapping_tc_2\
+[08/18 07:22:05     48s]    -library_sets min_timing
+[08/18 07:22:05     48s] @@file 10: create_timing_condition -name default_mapping_tc_1\
+[08/18 07:22:05     48s]    -library_sets max_timing
+[08/18 07:22:05     48s] @file 12:
+[08/18 07:22:05     48s] @@file 13: create_rc_corner -name rccorners\
+[08/18 07:22:05     48s]    -cap_table /home/hah013/Basic_SoC_Implementation/5_APR/4_CAP_TABLE/cln28hpl_1p10m+alrdl_5x2yu2yz_typical.capTbl\
+[08/18 07:22:05     48s]    -pre_route_res 1\
+[08/18 07:22:05     48s]    -post_route_res 1\
+[08/18 07:22:05     48s]    -pre_route_cap 1\
+[08/18 07:22:05     48s]    -post_route_cap 1\
+[08/18 07:22:05     48s]    -post_route_cross_cap 1\
+[08/18 07:22:05     48s]    -pre_route_clock_res 0\
+[08/18 07:22:05     48s]    -pre_route_clock_cap 0\
+[08/18 07:22:05     48s]    -qrc_tech /home/hah013/Basic_SoC_Implementation/5_APR/5_QRC_TECH/gpdk045.tch
+[08/18 07:22:05     48s] @file 23:
+[08/18 07:22:05     48s] @@file 24: create_delay_corner -name max_delay\
+[08/18 07:22:05     48s]    -timing_condition {default_mapping_tc_1}\
+[08/18 07:22:05     48s]    -rc_corner rccorners
+[08/18 07:22:05     48s] @@file 27: create_delay_corner -name min_delay\
+[08/18 07:22:05     48s]    -timing_condition {default_mapping_tc_2}\
+[08/18 07:22:05     48s]    -rc_corner rccorners
+[08/18 07:22:05     48s] @file 30:
+[08/18 07:22:05     48s] @@file 31: create_constraint_mode -name sdc_cons\
+[08/18 07:22:05     48s]    -sdc_files\
+[08/18 07:22:05     48s]     /home/hah013/Basic_SoC_Implementation/3_SYN/5_SYN/1_TASK/1_LOGIC_CIRCUIT/2_Seq_logic/1_SR_latch_with_NOR_gates/outputs/sr_latch_nor_3_final.sdc
+[08/18 07:22:05     48s] @file 34:
+[08/18 07:22:05     48s] @@file 35: create_analysis_view -name wc -constraint_mode sdc_cons -delay_corner max_delay
+[08/18 07:22:05     48s] @@file 36: create_analysis_view -name bc -constraint_mode sdc_cons -delay_corner min_delay
+[08/18 07:22:05     48s] @file 37:
+[08/18 07:22:05     48s] @@file 38: set_analysis_view -setup wc -hold bc
+[08/18 07:22:05     48s] @file 39:
+[08/18 07:22:05     48s] @file 40:
+[08/18 07:22:05     48s] #@ End verbose source sample.view
+[08/18 07:22:05     48s] Reading max_timing timing library '/home/hah013/Basic_SoC_Implementation/5_APR/1_LIB/slow_vdd1v0_basicCells.lib' ...
+[08/18 07:22:05     48s] **WARN: (TECHLIB-302):	No function defined for cell 'ANTENNA'. The cell will only be used for analysis. (File /home/hah013/Basic_SoC_Implementation/5_APR/1_LIB/slow_vdd1v0_basicCells.lib)
+[08/18 07:22:06     49s] Read 480 cells in library 'slow_vdd1v0' 
+[08/18 07:22:06     49s] Reading min_timing timing library '/home/hah013/Basic_SoC_Implementation/5_APR/1_LIB/fast_vdd1v0_basicCells.lib' ...
+[08/18 07:22:06     49s] **WARN: (TECHLIB-302):	No function defined for cell 'ANTENNA'. The cell will only be used for analysis. (File /home/hah013/Basic_SoC_Implementation/5_APR/1_LIB/fast_vdd1v0_basicCells.lib)
+[08/18 07:22:06     49s] Read 480 cells in library 'fast_vdd1v0' 
+[08/18 07:22:06     49s] Ending "PreSetAnalysisView" (total cpu=0:00:01.3, real=0:00:01.0, peak res=1429.4M, current mem=1364.1M)
+[08/18 07:22:06     49s] #################################
+[08/18 07:22:06     49s] read_physical -lef {../../../../../3_LEF/gsclib045_macro.lef}
+[08/18 07:22:06     49s] #################################
+[08/18 07:22:06     49s] 
+[08/18 07:22:06     49s] Loading LEF file ../../../../../3_LEF/gsclib045_macro.lef ...
+[08/18 07:22:06     49s] **ERROR: (IMPLF-328):	The layer 'Metal1' specified in macro pin 'ACHCONX2.CON' does not exist
+[08/18 07:22:06     49s] **ERROR: (IMPLF-328):	The layer 'Metal1' specified in macro pin 'ACHCONX2.CON' does not exist
+[08/18 07:22:06     49s] **ERROR: (IMPLF-328):	The layer 'Metal1' specified in macro pin 'ACHCONX2.CON' does not exist
+[08/18 07:22:06     49s] **ERROR: (IMPLF-328):	The layer 'Metal1' specified in macro pin 'ACHCONX2.CON' does not exist
+[08/18 07:22:06     49s] **ERROR: (IMPLF-328):	The layer 'Metal1' specified in macro pin 'ACHCONX2.CON' does not exist
+[08/18 07:22:06     49s] **ERROR: (IMPLF-53):	The layer 'Metal1' referenced in pin 'CON' in macro 'ACHCONX2' is not found in the database. A layer must be defined in the LEF technology LAYER section before it can be referenced from a macro. Review the LEF files specified in the init_lef_files variable to see if the layer does not exist or is specified after the one that defines the macro.
+[08/18 07:22:06     49s] Type 'man IMPLF-53' for more detail.
+[08/18 07:22:06     49s] **ERROR: (IMPLF-3):	Error found when processing LEF file '../../../../../3_LEF/gsclib045_macro.lef'. The subsequent file content is ignored. Refer to error messages above for details. Fix the errors, and restart 'Innovus'.
+[08/18 07:22:06     49s] Type 'man IMPLF-3' for more detail.
+[08/18 07:22:06     49s] **ERROR: (IMPLF-26):	No technology information is defined in the first LEF file.
+[08/18 07:22:06     49s] Please rearrange the LEF file order and make sure the technology LEF file is the
+[08/18 07:22:06     49s] first one, exit and restart Innovus.
+[08/18 07:22:06     49s] **ERROR: (IMPLF-26):	No technology information is defined in the first LEF file.
+[08/18 07:22:06     49s] Please rearrange the LEF file order and make sure the technology LEF file is the
+[08/18 07:22:06     49s] first one, exit and restart Innovus.
+[08/18 07:22:06     49s] **ERROR: (IMPSYT-16013):	Loading LEF file(s) failed, and has aborted. Refer to error messages above for details. Please exit the tools and fix the errors first, then re-load design again.
+[08/18 07:29:00    276s] **ERROR: **ERROR: (IMPSYT-16031):	Failed to execute command 'read_physical -lef {../../../../../3_LEF/gsclib045_macro.lef}'.For more details, refer to error message from console.
+[08/18 07:29:00    276s] 
+[08/18 07:29:00    276s] #################################
+[08/18 07:29:00    276s] read_netlist ../../../../../6_GLN/1_TASK/1_LOGIC_CIRCUIT/2_Seq_logic/1_SR_latch_with_NOR_gates/sr_latch_nor_3_netlist.v
+[08/18 07:29:00    276s] #################################
+[08/18 07:29:00    276s] #% Begin Load netlist data ... (date=08/18 07:29:00, mem=1379.3M)
+[08/18 07:29:00    276s] *** Begin netlist parsing (mem=1647.7M) ***
+[08/18 07:29:00    276s] Created 480 new cells from 2 timing libraries.
+[08/18 07:29:00    276s] Reading netlist ...
+[08/18 07:29:00    276s] Backslashed names will retain backslash and a trailing blank character.
+[08/18 07:29:00    276s] Reading verilog netlist '../../../../../6_GLN/1_TASK/1_LOGIC_CIRCUIT/2_Seq_logic/1_SR_latch_with_NOR_gates/sr_latch_nor_3_netlist.v'
+[08/18 07:29:00    276s] 
+[08/18 07:29:00    276s] *** Memory Usage v#1 (Current mem = 1650.680M, initial mem = 654.375M) ***
+[08/18 07:29:00    276s] *** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=1650.7M) ***
+[08/18 07:29:00    276s] #% End Load netlist data ... (date=08/18 07:29:00, total cpu=0:00:00.0, real=0:00:00.0, peak res=1388.6M, current mem=1388.6M)
+[08/18 07:29:00    276s] Top level cell is sr_latch_nor_3.
+[08/18 07:29:00    276s] Hooked 960 DB cells to tlib cells.
+[08/18 07:29:00    276s] ** Removed 476 unused lib cells.
+[08/18 07:29:00    276s] Ending "BindLib:" (total cpu=0:00:00.1, real=0:00:00.0, peak res=1402.0M, current mem=1402.0M)
+[08/18 07:29:00    276s] Starting recursive module instantiation check.
+[08/18 07:29:00    276s] No recursion found.
+[08/18 07:29:00    276s] Building hierarchical netlist for Cell sr_latch_nor_3 ...
+[08/18 07:29:00    276s] ***** UseNewTieNetMode *****.
+[08/18 07:29:00    276s] *** Netlist is unique.
+[08/18 07:29:00    276s] **WARN: (IMPTRN-1103):	Cell (0) ACHCONX2's height is less than placement-grid.
+[08/18 07:29:00    276s] **WARN: (IMPTRN-1103):	Cell (0) ACHCONX2's height is less than placement-grid.
+[08/18 07:29:00    276s] **WARN: (IMPTRN-1100):	Cannot determine standard cell height.  Assume it 10 IGU.
+[08/18 07:29:00    276s] **ERROR: (IMPREPO-102):	Instance o_Q_reg of the cell TLATNXL has no physical library or has wrong dimen-
+[08/18 07:29:00    276s] sion values (<=0). Check your design setup to make sure the physical
+[08/18 07:29:00    276s]  library is loaded in and the attributes specified in physical library are correct.
+[08/18 07:29:00    276s] Type 'man IMPREPO-102' for more detail.
+[08/18 07:29:00    276s] **ERROR: (IMPREPO-102):	Instance o_Q_n_reg of the cell TLATNXL has no physical library or has wrong dimen-
+[08/18 07:29:00    276s] sion values (<=0). Check your design setup to make sure the physical
+[08/18 07:29:00    276s]  library is loaded in and the attributes specified in physical library are correct.
+[08/18 07:29:00    276s] Type 'man IMPREPO-102' for more detail.
+[08/18 07:29:00    276s] **ERROR: (IMPREPO-102):	Instance g71__2398 of the cell NOR2BX1 has no physical library or has wrong dimen-
+[08/18 07:29:00    276s] sion values (<=0). Check your design setup to make sure the physical
+[08/18 07:29:00    276s]  library is loaded in and the attributes specified in physical library are correct.
+[08/18 07:29:00    276s] Type 'man IMPREPO-102' for more detail.
+[08/18 07:29:00    276s] **ERROR: (IMPREPO-102):	Instance g72__5107 of the cell NOR2BX1 has no physical library or has wrong dimen-
+[08/18 07:29:00    276s] sion values (<=0). Check your design setup to make sure the physical
+[08/18 07:29:00    276s]  library is loaded in and the attributes specified in physical library are correct.
+[08/18 07:29:00    276s] Type 'man IMPREPO-102' for more detail.
+[08/18 07:29:00    276s] **ERROR: (IMPREPO-102):	Instance g73__6260 of the cell NOR2XL has no physical library or has wrong dimen-
+[08/18 07:29:00    276s] sion values (<=0). Check your design setup to make sure the physical
+[08/18 07:29:00    276s]  library is loaded in and the attributes specified in physical library are correct.
+[08/18 07:29:00    276s] Type 'man IMPREPO-102' for more detail.
+[08/18 07:29:00    276s] ** info: there are 9 modules.
+[08/18 07:29:00    276s] ** info: there are 5 stdCell insts.
+[08/18 07:29:00    276s] ** info: there are 0 stdCell insts with at least one signal pin.
+[08/18 07:29:00    276s] **ERROR: (IMPREPO-103):	There are 5 instances (3 cells) with no dimension defined.
+[08/18 07:29:00    276s] 
+[08/18 07:29:00    276s] *** Memory Usage v#1 (Current mem = 1707.105M, initial mem = 654.375M) ***
+[08/18 07:29:00    276s] **ERROR: (IMPFP-1594):	No site specified. Check the LEF/OA file to make sure a site is specified for core cell.
+[08/18 07:29:00    276s] Type 'man IMPFP-1594' for more detail.
+[08/18 07:29:00    276s] **ERROR: (IMPSYC-1595):	No row created.
+[08/18 07:29:01    276s] Extraction setup Started 
+[08/18 07:29:01    276s] Initializing multi-corner RC extraction with 1 active RC Corners ...
+[08/18 07:29:01    276s] **WARN: (IMPEXT-6202):	In addition to the technology file, the capacitance table file is specified for all the RC corners. If the technology file  is already specified for all the RC corners, the capacitance table file is not required for pre_route and post_route extraction. In a new session, the capacitance table files can be removed from the create_rc_corner command to enable the technology file to be used for pre_route and post_route (effort level medium/high/signoff) extraction engines.
+[08/18 07:29:01    276s] Type 'man IMPEXT-6202' for more detail.
+[08/18 07:29:01    276s] **ERROR: (IMPEXT-3466):	The technology layer information is not available. This can happen if either no LEF file is imported or an error occurs while reading the LEF file(s). The capacitance table file cannot be read without the layer information.
+[08/18 07:29:01    276s] **ERROR: (IMPEXT-2677):	Multi-corner RC initialization is aborted because of previously-reported errors. Use the reason provided in the error message(s) to resolve this issue and use the set_analysis_view command to invoke multi-corner initialization again.
+[08/18 07:29:01    276s] *Info: initialize multi-corner CTS.
+[08/18 07:29:01    276s] Ending "SetAnalysisView" (total cpu=0:00:00.1, real=0:00:00.0, peak res=1672.3M, current mem=1429.1M)
+[08/18 07:29:01    277s] Reading timing constraints file '/home/hah013/Basic_SoC_Implementation/3_SYN/5_SYN/1_TASK/1_LOGIC_CIRCUIT/2_Seq_logic/1_SR_latch_with_NOR_gates/outputs/sr_latch_nor_3_final.sdc' ...
+[08/18 07:29:01    277s] Current (total cpu=0:04:37, real=0:08:46, peak res=1796.9M, current mem=1796.9M)
+[08/18 07:29:01    277s] **WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File /home/hah013/Basic_SoC_Implementation/3_SYN/5_SYN/1_TASK/1_LOGIC_CIRCUIT/2_Seq_logic/1_SR_latch_with_NOR_gates/outputs/sr_latch_nor_3_final.sdc, Line 9).
+[08/18 07:29:01    277s] 
+[08/18 07:29:01    277s] **WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File /home/hah013/Basic_SoC_Implementation/3_SYN/5_SYN/1_TASK/1_LOGIC_CIRCUIT/2_Seq_logic/1_SR_latch_with_NOR_gates/outputs/sr_latch_nor_3_final.sdc, Line 10).
+[08/18 07:29:01    277s] 
+[08/18 07:29:01    277s] sr_latch_nor_3
+[08/18 07:29:01    277s] INFO (CTE): Reading of timing constraints file /home/hah013/Basic_SoC_Implementation/3_SYN/5_SYN/1_TASK/1_LOGIC_CIRCUIT/2_Seq_logic/1_SR_latch_with_NOR_gates/outputs/sr_latch_nor_3_final.sdc completed, with 2 WARNING
+[08/18 07:29:01    277s] Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1798.2M, current mem=1798.2M)
+[08/18 07:29:01    277s] Current (total cpu=0:04:37, real=0:08:46, peak res=1798.2M, current mem=1798.2M)
+[08/18 07:29:01    277s] 
+[08/18 07:29:01    277s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) Begin ...
+[08/18 07:29:01    277s] Tech dependent Parameter, Build TLibAnalyzer for: cellAreaConsiderPadding
+[08/18 07:29:01    277s] Summary for sequential cells identification: 
+[08/18 07:29:01    277s]   Identified SBFF number: 0
+[08/18 07:29:01    277s]   Identified MBFF number: 0
+[08/18 07:29:01    277s]   Identified SB Latch number: 0
+[08/18 07:29:01    277s]   Identified MB Latch number: 0
+[08/18 07:29:01    277s]   Not identified SBFF number: 0
+[08/18 07:29:01    277s]   Not identified MBFF number: 0
+[08/18 07:29:01    277s]   Not identified SB Latch number: 0
+[08/18 07:29:01    277s]   Not identified MB Latch number: 0
+[08/18 07:29:01    277s]   Number of sequential cells which are not FFs: 0
+[08/18 07:29:01    277s] 
+[08/18 07:29:01    277s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) End ...
+[08/18 07:29:01    277s] 
+[08/18 07:29:01    277s] TimeStamp Deleting Cell Server Begin ...
+[08/18 07:29:01    277s] 
+[08/18 07:29:01    277s] TimeStamp Deleting Cell Server End ...
+[08/18 07:29:01    277s] Total number of combinational cells: 1
+[08/18 07:29:01    277s] Total number of sequential cells: 0
+[08/18 07:29:01    277s] Total number of tristate cells: 0
+[08/18 07:29:01    277s] Total number of level shifter cells: 0
+[08/18 07:29:01    277s] Total number of power gating cells: 0
+[08/18 07:29:01    277s] Total number of isolation cells: 0
+[08/18 07:29:01    277s] Total number of power switch cells: 0
+[08/18 07:29:01    277s] Total number of pulse generator cells: 0
+[08/18 07:29:01    277s] Total number of always on buffers: 0
+[08/18 07:29:01    277s] Total number of retention cells: 0
+[08/18 07:29:01    277s] Total number of physical cells: 0
+[08/18 07:29:01    277s] List of usable buffers:
+[08/18 07:29:01    277s] Total number of usable buffers: 0
+[08/18 07:29:01    277s] List of unusable buffers:
+[08/18 07:29:01    277s] Total number of unusable buffers: 0
+[08/18 07:29:01    277s] List of usable inverters:
+[08/18 07:29:01    277s] Total number of usable inverters: 0
+[08/18 07:29:01    277s] List of unusable inverters:
+[08/18 07:29:01    277s] Total number of unusable inverters: 0
+[08/18 07:29:01    277s] List of identified usable delay cells:
+[08/18 07:29:01    277s] Total number of identified usable delay cells: 0
+[08/18 07:29:01    277s] List of identified unusable delay cells:
+[08/18 07:29:01    277s] Total number of identified unusable delay cells: 0
+[08/18 07:29:01    277s] No delay cells were detected in the set of buffers. Buffers will be used to fix hold violations.
+[08/18 07:29:01    277s] Ending "Cell type marking" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1824.7M, current mem=1824.7M)
+[08/18 07:29:01    277s] 
+[08/18 07:29:01    277s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) Begin ...
+[08/18 07:29:01    277s] Summary for sequential cells identification: 
+[08/18 07:29:01    277s]   Identified SBFF number: 0
+[08/18 07:29:01    277s]   Identified MBFF number: 0
+[08/18 07:29:01    277s]   Identified SB Latch number: 0
+[08/18 07:29:01    277s]   Identified MB Latch number: 0
+[08/18 07:29:01    277s]   Not identified SBFF number: 0
+[08/18 07:29:01    277s]   Not identified MBFF number: 0
+[08/18 07:29:01    277s]   Not identified SB Latch number: 0
+[08/18 07:29:01    277s]   Not identified MB Latch number: 0
+[08/18 07:29:01    277s]   Number of sequential cells which are not FFs: 0
+[08/18 07:29:01    277s]  Visiting view : wc
+[08/18 07:29:01    277s]    : PowerDomain = none : Weighted F : unweighted  = -922337203685477632.00 (1.000) with rcCorner = -1
+[08/18 07:29:01    277s]    : PowerDomain = none : no stdDelay from this view
+[08/18 07:29:01    277s]    : PowerDomain = none : Weighted F : unweighted  = -922337203685477632.00 (1.000) with rcCorner = -1
+[08/18 07:29:01    277s]  Visiting view : bc
+[08/18 07:29:01    277s]    : PowerDomain = none : Weighted F : unweighted  = -922337203685477632.00 (1.000) with rcCorner = -1
+[08/18 07:29:01    277s]    : PowerDomain = none : no stdDelay from this view
+[08/18 07:29:01    277s]    : PowerDomain = none : Weighted F : unweighted  = -922337203685477632.00 (1.000) with rcCorner = -1
+[08/18 07:29:01    277s] *INFO : stdDelay is calculated as zero; using legacy method.
+[08/18 07:29:01    277s] *INFO : stdSlew is calculated as zero; using legacy method.
+[08/18 07:29:01    277s] TLC MultiMap info (StdDelay):
+[08/18 07:29:01    277s]   : min_delay + min_timing + 1 + no RcCorner := -9.22337e+17ps
+[08/18 07:29:01    277s]   : min_delay + min_timing + 1 + rccorners := -9.22337e+17ps
+[08/18 07:29:01    277s]   : max_delay + max_timing + 1 + no RcCorner := -9.22337e+17ps
+[08/18 07:29:01    277s]   : max_delay + max_timing + 1 + rccorners := -9.22337e+17ps
+[08/18 07:29:01    277s]  Setting StdDelay to: 10ps
+[08/18 07:29:01    277s] 
+[08/18 07:29:01    277s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) End ...
+[08/18 07:29:01    277s] 
+[08/18 07:29:01    277s] TimeStamp Deleting Cell Server Begin ...
+[08/18 07:29:01    277s] 
+[08/18 07:29:01    277s] TimeStamp Deleting Cell Server End ...
+[08/18 07:29:01    277s] **WARN: (IMPOPT-3000):	Buffer footprint is not defined or is an invalid buffer footprint.
+[08/18 07:29:01    277s] Type 'man IMPOPT-3000' for more detail.
+[08/18 07:29:01    277s] **WARN: (IMPOPT-3001):	Inverter footprint is not defined or is an invalid inverter footprint.
+[08/18 07:29:01    277s] Type 'man IMPOPT-3001' for more detail.
+[08/18 07:29:01    277s] Extraction setup Started 
+[08/18 07:29:01    277s] Initializing multi-corner RC extraction with 1 active RC Corners ...
+[08/18 07:29:01    277s] **WARN: (IMPEXT-6202):	In addition to the technology file, the capacitance table file is specified for all the RC corners. If the technology file  is already specified for all the RC corners, the capacitance table file is not required for pre_route and post_route extraction. In a new session, the capacitance table files can be removed from the create_rc_corner command to enable the technology file to be used for pre_route and post_route (effort level medium/high/signoff) extraction engines.
+[08/18 07:29:01    277s] Type 'man IMPEXT-6202' for more detail.
+[08/18 07:29:01    277s] **ERROR: (IMPEXT-3466):	The technology layer information is not available. This can happen if either no LEF file is imported or an error occurs while reading the LEF file(s). The capacitance table file cannot be read without the layer information.
+[08/18 07:29:01    277s] **ERROR: (IMPEXT-2677):	Multi-corner RC initialization is aborted because of previously-reported errors. Use the reason provided in the error message(s) to resolve this issue and use the set_analysis_view command to invoke multi-corner initialization again.
+[08/18 07:29:43    294s] #################################
+[08/18 07:29:43    294s] read_mmmc sample.view
+[08/18 07:29:43    294s] #################################
+[08/18 07:29:43    294s] **WARN: (TCLCMD-1306):	read_mmmc command should be called once before init_design.
+[08/18 07:29:59    303s] **ERROR: **ERROR: (IMPSYT-16031):	Failed to execute command 'read_mmmc sample.view'.For more details, refer to error message from console.
+[08/18 07:29:59    303s] 
+[08/18 07:29:59    303s] #################################
+[08/18 07:29:59    303s] read_physical -lef {../../../../../3_LEF/gsclib045_tech.lef ../../../../../3_LEF/gsclib045_macro.lef}
+[08/18 07:29:59    303s] #################################
+[08/18 07:29:59    303s] **ERROR: (IMPIMEX-7030):	LEF files are not allowed to be read in after the design is in memory. If you want to modify the current list of LEF files, please refer to read_physical -add_lefs**ERROR: **ERROR: (IMPSYT-16031):	Failed to execute command 'read_physical -lef {../../../../../3_LEF/gsclib045_tech.lef ../../../../../3_LEF/gsclib045_macro.lef}'.For more details, refer to error message from console.
+[08/18 07:30:04    307s] 
+[08/18 07:30:04    307s] #################################
+[08/18 07:30:04    307s] read_netlist ../../../../../6_GLN/1_TASK/1_LOGIC_CIRCUIT/2_Seq_logic/1_SR_latch_with_NOR_gates/sr_latch_nor_3_netlist.v -top sr_latch_nor_3
+[08/18 07:30:04    307s] #################################
+[08/18 07:30:06    308s] **ERROR: **ERROR: (IMPSYT-16031):	Failed to execute command 'read_netlist ../../../../../6_GLN/1_TASK/1_LOGIC_CIRCUIT/2_Seq_logic/1_SR_latch_with_NOR_gates/sr_latch_nor_3_netlist.v -top sr_latch_nor_3'.For more details, refer to error message from console.
+[08/18 07:30:06    308s] 
+[08/18 07:30:06    308s] **ERROR: (IMPIMEX-12):	'init_design' failed. You are missing one or more of the required commands before running init_design.
+[08/18 07:30:06    308s] The MMMC init sequence looks like this: 
+[08/18 07:30:06    308s] read_mmmc top.mmmc 
+[08/18 07:30:06    308s] read_physical -lef {tech.lef stdcell.lef}   #optional in Tempus, required for Innovus 
+[08/18 07:30:06    308s] read_netlist top.v 
+[08/18 07:30:06    308s] read_power_intent -1801 top.1801	    #only for MSV designs 
+[08/18 07:30:06    308s] init_design 
+[08/18 07:30:06    308s] 
+[08/18 07:30:06    308s] Tempus also supports a single-mode timing init sequence with no MMMC file like this: 
+[08/18 07:30:06    308s] read_libs all.lib 
+[08/18 07:30:06    308s] read_netlist top.v 
+[08/18 07:30:06    308s] read_sdc top.sdc 
+[08/18 07:30:06    308s] init_design 
+[08/18 07:30:06    308s] 
+[08/18 07:30:06    308s] See the 'Stylus Common UI Initialization' section in the 'Design Import and Export Capabilities' chapter of the Innovus Stylus 
+[08/18 07:30:06    308s] Common UI User Guide for more details.
+[08/18 07:30:28    320s] #################################
+[08/18 07:30:28    320s] read_physical -lef {../../../../../3_LEF/gsclib045_tech.lef ../../../../../3_LEF/gsclib045_macro.lef}
+[08/18 07:30:28    320s] #################################
+[08/18 07:30:28    320s] **ERROR: (IMPIMEX-7030):	LEF files are not allowed to be read in after the design is in memory. If you want to modify the current list of LEF files, please refer to read_physical -add_lefs**ERROR: **ERROR: (IMPSYT-16031):	Failed to execute command 'read_physical -lef {../../../../../3_LEF/gsclib045_tech.lef ../../../../../3_LEF/gsclib045_macro.lef}'.For more details, refer to error message from console.
+[08/18 07:30:30    321s] 
+[08/18 07:30:30    321s] #################################
+[08/18 07:30:30    321s] read_netlist ../../../../../6_GLN/1_TASK/1_LOGIC_CIRCUIT/2_Seq_logic/1_SR_latch_with_NOR_gates/sr_latch_nor_3_netlist.v -top sr_latch_nor_3
+[08/18 07:30:30    321s] #################################
+[08/18 07:30:30    321s] **ERROR: **ERROR: (IMPSYT-16031):	Failed to execute command 'read_netlist ../../../../../6_GLN/1_TASK/1_LOGIC_CIRCUIT/2_Seq_logic/1_SR_latch_with_NOR_gates/sr_latch_nor_3_netlist.v -top sr_latch_nor_3'.For more details, refer to error message from console.
+[08/18 07:30:30    321s] 
+[08/18 07:30:30    321s] **ERROR: (IMPIMEX-12):	'init_design' failed. You are missing one or more of the required commands before running init_design.
+[08/18 07:30:30    321s] The MMMC init sequence looks like this: 
+[08/18 07:30:30    321s] read_mmmc top.mmmc 
+[08/18 07:30:30    321s] read_physical -lef {tech.lef stdcell.lef}   #optional in Tempus, required for Innovus 
+[08/18 07:30:30    321s] read_netlist top.v 
+[08/18 07:30:30    321s] read_power_intent -1801 top.1801	    #only for MSV designs 
+[08/18 07:30:30    321s] init_design 
+[08/18 07:30:30    321s] 
+[08/18 07:30:30    321s] Tempus also supports a single-mode timing init sequence with no MMMC file like this: 
+[08/18 07:30:30    321s] read_libs all.lib 
+[08/18 07:30:30    321s] read_netlist top.v 
+[08/18 07:30:30    321s] read_sdc top.sdc 
+[08/18 07:30:30    321s] init_design 
+[08/18 07:30:30    321s] 
+[08/18 07:30:30    321s] See the 'Stylus Common UI Initialization' section in the 'Design Import and Export Capabilities' chapter of the Innovus Stylus 
+[08/18 07:30:30    321s] Common UI User Guide for more details.
+[08/18 07:30:38    323s] 
+[08/18 07:30:38    323s] --------------------------------------------------------------------------------
+[08/18 07:30:38    323s] Exiting Innovus on Tue Aug 18 07:30:38 2026
+[08/18 07:30:38    323s]   Total CPU time:     0:05:23
+[08/18 07:30:38    323s]   Total real time:    0:10:24
+[08/18 07:30:38    323s]   Peak memory (main): 2012.72MB
+[08/18 07:30:38    323s] 
+[08/18 07:30:38    323s] 
+[08/18 07:30:38    323s] *** Memory Usage v#1 (Current mem = 2321.301M, initial mem = 654.375M) ***
+[08/18 07:30:38    323s] 
+[08/18 07:30:38    323s] *** Summary of all messages that are not suppressed in this session:
+[08/18 07:30:38    323s] Severity  ID               Count  Summary                                  
+[08/18 07:30:38    323s] ERROR     IMPLF-3              1  Error found when processing LEF file '%s...
+[08/18 07:30:38    323s] ERROR     IMPLF-26             2  No technology information is defined in ...
+[08/18 07:30:38    323s] ERROR     IMPLF-53             1  The layer '%s' referenced %s is not foun...
+[08/18 07:30:38    323s] ERROR     IMPLF-328            5  The layer '%s' specified in macro pin '%...
+[08/18 07:30:38    323s] WARNING   IMPTRN-1100          1  Cannot determine standard cell height.  ...
+[08/18 07:30:38    323s] WARNING   IMPTRN-1103          2  Cell (%d) %s's %s is less than %s.       
+[08/18 07:30:38    323s] ERROR     IMPFP-1594           1  No site specified. Check the LEF/OA file...
+[08/18 07:30:38    323s] WARNING   IMPEXT-6202          2  In addition to the technology file, the ...
+[08/18 07:30:38    323s] ERROR     IMPEXT-2677          2  Multi-corner RC initialization is aborte...
+[08/18 07:30:38    323s] ERROR     IMPEXT-3466          2  The technology layer information is not ...
+[08/18 07:30:38    323s] ERROR     IMPSYT-16013         1  Loading LEF file(s) failed, and has abor...
+[08/18 07:30:38    323s] ERROR     IMPSYT-16031         6  %s                                       
+[08/18 07:30:38    323s] ERROR     IMPSYC-1595          1  No row created.                          
+[08/18 07:30:38    323s] WARNING   IMPOPT-3000          1  Buffer footprint is not defined or is an...
+[08/18 07:30:38    323s] WARNING   IMPOPT-3001          1  Inverter footprint is not defined or is ...
+[08/18 07:30:38    323s] ERROR     IMPREPO-102          5  Instance %s of the cell %s has no physic...
+[08/18 07:30:38    323s] ERROR     IMPREPO-103          1  There are %d instances (%d cells) with n...
+[08/18 07:30:38    323s] ERROR     IMPIMEX-7041         2  Netlist files are not allowed to be read...
+[08/18 07:30:38    323s] ERROR     IMPIMEX-12           2  'init_design' failed. You are missing on...
+[08/18 07:30:38    323s] ERROR     IMPIMEX-7030         2  LEF files are not allowed to be read in ...
+[08/18 07:30:38    323s] WARNING   TCLCMD-1306          1  read_mmmc command should be called once ...
+[08/18 07:30:38    323s] WARNING   TCLCMD-1461          2  Skipped unsupported command: %s          
+[08/18 07:30:38    323s] WARNING   TECHLIB-302          2  No function defined for cell '%s'. The c...
+[08/18 07:30:38    323s] *** Message Summary: 12 warning(s), 34 error(s)
+[08/18 07:30:38    323s] 
+[08/18 07:30:38    323s] --- Ending "Innovus" (totcpu=0:05:24, real=0:10:23, mem=2321.3M) ---

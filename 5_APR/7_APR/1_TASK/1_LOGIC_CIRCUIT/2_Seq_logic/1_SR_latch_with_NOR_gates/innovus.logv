@@ -1,0 +1,93 @@
+[08/18 06:53:37      0s] 
+[08/18 06:53:37      0s] Cadence Innovus(TM) Implementation System.
+[08/18 06:53:37      0s] Copyright 2022 Cadence Design Systems, Inc. All rights reserved worldwide.
+[08/18 06:53:37      0s] 
+[08/18 06:53:37      0s] Version:	v22.17-s086_1, built Tue Sep 24 10:51:50 PDT 2024
+[08/18 06:53:37      0s] Options:	-stylus 
+[08/18 06:53:37      0s] Date:		Tue Aug 18 06:53:37 2026
+[08/18 06:53:37      0s] Host:		kopo-seongnam (x86_64 w/Linux 3.10.0-1160.el7.x86_64) (20cores*80cpus*Intel(R) Xeon(R) Gold 5218R CPU @ 2.10GHz 28160KB)
+[08/18 06:53:37      0s] OS:		CentOS Linux 7 (Core)
+[08/18 06:53:37      0s] 
+[08/18 06:53:37      0s] License:
+[08/18 06:53:37      0s] 		[06:53:37.163265] Configured Lic search path (22.01-s003): 5280@172.31.52.241
+[08/18 06:53:37      0s] 
+[08/18 06:53:37      0s] 		invs	Innovus Implementation System	22.1	Denied
+[08/18 06:53:37      0s] 		invsb	Innovus Implementation System Basic	22.1	checkout succeeded
+[08/18 06:53:37      0s] 		4 CPU jobs allowed with the current license(s). Use set_multi_cpu_usage to set your required CPU count.
+[08/18 06:53:38      0s] **ERROR: (IMPOAX-8053):	Could not open shared library libinnovusoax22.so : liboaPrivateCDS.so: cannot open shared object file: No such file or directory.
+[08/18 06:53:38      0s] **ERROR: (IMPOAX-8053):	Could not open shared library libcdsSkillPcell.so : /tools/cadence/DDI221/INNOVUS221/tools.lnx86/innovus/bin/64bit/../../../lib/64bit/libcdsSkillPcell.so: undefined symbol: _ZTIN12OpenAccess_413oaFSComponentE.
+[08/18 06:53:38      0s] **ERROR: (IMPOAX-8033):	OpenAccess features will be disabled in this session.
+[08/18 06:53:51     13s] 
+[08/18 06:53:51     13s] 
+[08/18 06:53:56     18s] Reset Parastics called with the command setExtractRCMode -reset@(#)CDS: Innovus v22.17-s086_1 (64bit) 09/24/2024 10:51 (Linux 3.10.0-693.el7.x86_64)
+[08/18 06:53:59     20s] @(#)CDS: NanoRoute 22.17-s086_1 NR240905-1647/22_17-UB (database version 18.20.629) {superthreading v2.20}
+[08/18 06:53:59     20s] @(#)CDS: AAE 22.17-s013 (64bit) 09/24/2024 (Linux 3.10.0-693.el7.x86_64)
+[08/18 06:53:59     20s] @(#)CDS: CTE 22.17-s017_1 () Sep 12 2024 04:53:54 ( )
+[08/18 06:53:59     20s] @(#)CDS: SYNTECH 22.17-s006_1 () Aug 12 2024 03:52:27 ( )
+[08/18 06:53:59     20s] @(#)CDS: CPE v22.17-s051
+[08/18 06:53:59     20s] @(#)CDS: IQuantus/TQuantus 21.2.2-s369 (64bit) Tue May 7 14:30:42 PDT 2024 (Linux 3.10.0-693.el7.x86_64)
+[08/18 06:53:59     20s] @(#)CDS: OA 22.60-p095 Wed Apr 17 03:30:14 2024
+[08/18 06:53:59     20s] @(#)CDS: SGN 22.20-d001 (02-Jan-2023) (64 bit executable, TkQt5.9.1)
+[08/18 06:53:59     20s] @(#)CDS: RCDB 11.15.0
+[08/18 06:53:59     20s] @(#)CDS: STYLUS 22.15-s003_1 (04/04/2024 05:58 PDT)
+[08/18 06:53:59     20s] @(#)CDS: IntegrityPlanner-22.17-15746 (22.17) (2024-07-03 11:16:10+0800)
+[08/18 06:53:59     20s] Create and set the environment variable TMPDIR to /home/hah013/Basic_SoC_Implementation/5_APR/7_APR/1_TASK/1_LOGIC_CIRCUIT/2_Seq_logic/1_SR_latch_with_NOR_gates/innovus_temp_276663_606a0643-cb06-4640-bb28-72b314e87d8e_kopo-seongnam_hah013_2n008F.
+
+[08/18 06:53:59     20s] Create and set the environment variable TMPDIR to /home/hah013/Basic_SoC_Implementation/5_APR/7_APR/1_TASK/1_LOGIC_CIRCUIT/2_Seq_logic/1_SR_latch_with_NOR_gates/innovus_temp_276663_606a0643-cb06-4640-bb28-72b314e87d8e_kopo-seongnam_hah013_2n008F.
+[08/18 06:53:59     20s] 
+[08/18 06:53:59     20s] Change the soft stacksize limit to 0.2%RAM (770 mbytes). Set global soft_stack_size_limit to change the value.
+[08/18 06:54:01     22s] [INFO] Loading PVS 20.11 fill procedures
+[08/18 06:54:03     23s] 
+[08/18 06:54:03     23s] **INFO:  MMMC transition support version v31-84 
+[08/18 06:54:03     23s] 
+[08/18 06:54:06     26s] @innovus 1> **ERROR: (IMPOAX-820):	The OpenAccess (OA) features are disabled in the current session of Innovus because the oax shared library could not be loaded properly. This could be because your installation was not properly configured. To enable OA features, exit the current session and re-launch Innovus either after fixing your installation by running the Configure Installation phase, or after setting the OA_HOME variable to point to a proper OA installation. Check the "OpenAccess Installation and Configuration Guide" manual for more information.
+[08/18 06:54:15     28s] 
+[08/18 06:54:15     28s] **ERROR: (IMPOAX-850):	getG2Libs command cannot be run as OpenAccess features are disabled in this session.
+[08/18 06:54:15     28s] **ERROR: (IMPQTF-4044):	Error occurs when '::Rda_Design::Input::update' is executed with the error message: ''. This is probably an inner GUI action error. Use the TCL command directly instead of the GUI interactive.
+[08/18 06:54:27     31s] **ERROR: (IMPIMEX-12):	'init_design' failed. You are missing one or more of the required commands before running init_design.
+[08/18 06:54:27     31s] The MMMC init sequence looks like this: 
+[08/18 06:54:27     31s] read_mmmc top.mmmc 
+[08/18 06:54:27     31s] read_physical -lef {tech.lef stdcell.lef}   #optional in Tempus, required for Innovus 
+[08/18 06:54:27     31s] read_netlist top.v 
+[08/18 06:54:27     31s] read_power_intent -1801 top.1801	    #only for MSV designs 
+[08/18 06:54:27     31s] init_design 
+[08/18 06:54:27     31s] 
+[08/18 06:54:27     31s] Tempus also supports a single-mode timing init sequence with no MMMC file like this: 
+[08/18 06:54:27     31s] read_libs all.lib 
+[08/18 06:54:27     31s] read_netlist top.v 
+[08/18 06:54:27     31s] read_sdc top.sdc 
+[08/18 06:54:27     31s] init_design 
+[08/18 06:54:27     31s] 
+[08/18 06:54:27     31s] See the 'Stylus Common UI Initialization' section in the 'Design Import and Export Capabilities' chapter of the Innovus Stylus 
+[08/18 06:54:27     31s] Common UI User Guide for more details.
+[08/18 06:54:30     31s] **ERROR: (IMPIMEX-12):	'init_design' failed. You are missing one or more of the required commands before running init_design.
+[08/18 06:54:30     31s] The MMMC init sequence looks like this: 
+[08/18 06:54:30     31s] read_mmmc top.mmmc 
+[08/18 06:54:30     31s] read_physical -lef {tech.lef stdcell.lef}   #optional in Tempus, required for Innovus 
+[08/18 06:54:30     31s] read_netlist top.v 
+[08/18 06:54:30     31s] read_power_intent -1801 top.1801	    #only for MSV designs 
+[08/18 06:54:30     31s] init_design 
+[08/18 06:54:30     31s] 
+[08/18 06:54:30     31s] Tempus also supports a single-mode timing init sequence with no MMMC file like this: 
+[08/18 06:54:30     31s] read_libs all.lib 
+[08/18 06:54:30     31s] read_netlist top.v 
+[08/18 06:54:30     31s] read_sdc top.sdc 
+[08/18 06:54:30     31s] init_design 
+[08/18 06:54:30     31s] 
+[08/18 06:54:30     31s] See the 'Stylus Common UI Initialization' section in the 'Design Import and Export Capabilities' chapter of the Innovus Stylus 
+[08/18 06:54:30     31s] Common UI User Guide for more details.
+exit
+[08/18 07:00:24     91s] 
+[08/18 07:00:24     91s] *** Memory Usage v#1 (Current mem = 1617.426M, initial mem = 654.375M) ***
+[08/18 07:00:24     91s] 
+[08/18 07:00:24     91s] *** Summary of all messages that are not suppressed in this session:
+[08/18 07:00:24     91s] Severity  ID               Count  Summary                                  
+[08/18 07:00:24     91s] ERROR     IMPOAX-820           1  The OpenAccess (OA) features are disable...
+[08/18 07:00:24     91s] ERROR     IMPOAX-850           1  %s command cannot be run as OpenAccess f...
+[08/18 07:00:24     91s] ERROR     IMPOAX-8033          1  OpenAccess features will be disabled in ...
+[08/18 07:00:24     91s] ERROR     IMPOAX-8053          2  Could not open shared library %s : %s.   
+[08/18 07:00:24     91s] ERROR     IMPQTF-4044          1  Error occurs when '%s' is executed with ...
+[08/18 07:00:24     91s] ERROR     IMPIMEX-12           2  'init_design' failed. You are missing on...
+[08/18 07:00:24     91s] *** Message Summary: 0 warning(s), 8 error(s)
+[08/18 07:00:24     91s] 
+[08/18 07:00:24     91s] --- Ending "Innovus" (totcpu=0:01:32, real=0:06:47, mem=1617.4M) ---

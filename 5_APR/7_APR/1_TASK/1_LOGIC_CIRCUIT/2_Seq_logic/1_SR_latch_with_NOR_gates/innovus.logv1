@@ -1,0 +1,44 @@
+[08/18 07:00:58      0s] 
+[08/18 07:00:58      0s] Cadence Innovus(TM) Implementation System.
+[08/18 07:00:58      0s] Copyright 2022 Cadence Design Systems, Inc. All rights reserved worldwide.
+[08/18 07:00:58      0s] 
+[08/18 07:00:58      0s] Version:	v22.17-s086_1, built Tue Sep 24 10:51:50 PDT 2024
+[08/18 07:00:58      0s] Options:	-stylus 
+[08/18 07:00:58      0s] Date:		Tue Aug 18 07:00:58 2026
+[08/18 07:00:58      0s] Host:		kopo-seongnam (x86_64 w/Linux 3.10.0-1160.el7.x86_64) (20cores*80cpus*Intel(R) Xeon(R) Gold 5218R CPU @ 2.10GHz 28160KB)
+[08/18 07:00:58      0s] OS:		CentOS Linux 7 (Core)
+[08/18 07:00:58      0s] 
+[08/18 07:00:58      0s] License:
+[08/18 07:00:58      0s] 		[07:00:58.158625] Configured Lic search path (22.01-s003): 5280@localhost
+[08/18 07:00:58      0s] 
+[08/18 07:00:58      0s] 		invs	Innovus Implementation System	22.1	Denied
+[08/18 07:00:58      0s] 		invsb	Innovus Implementation System Basic	22.1	checkout succeeded
+[08/18 07:00:58      0s] 		4 CPU jobs allowed with the current license(s). Use set_multi_cpu_usage to set your required CPU count.
+[08/18 07:01:12     13s] 
+[08/18 07:01:12     13s] 
+[08/18 07:01:18     18s] Reset Parastics called with the command setExtractRCMode -reset@(#)CDS: Innovus v22.17-s086_1 (64bit) 09/24/2024 10:51 (Linux 3.10.0-693.el7.x86_64)
+[08/18 07:01:20     21s] @(#)CDS: NanoRoute 22.17-s086_1 NR240905-1647/22_17-UB (database version 18.20.629) {superthreading v2.20}
+[08/18 07:01:20     21s] @(#)CDS: AAE 22.17-s013 (64bit) 09/24/2024 (Linux 3.10.0-693.el7.x86_64)
+[08/18 07:01:20     21s] @(#)CDS: CTE 22.17-s017_1 () Sep 12 2024 04:53:54 ( )
+[08/18 07:01:20     21s] @(#)CDS: SYNTECH 22.17-s006_1 () Aug 12 2024 03:52:27 ( )
+[08/18 07:01:20     21s] @(#)CDS: CPE v22.17-s051
+[08/18 07:01:20     21s] @(#)CDS: IQuantus/TQuantus 21.2.2-s369 (64bit) Tue May 7 14:30:42 PDT 2024 (Linux 3.10.0-693.el7.x86_64)
+[08/18 07:01:20     21s] @(#)CDS: OA 22.60-p095 Wed Apr 17 03:30:14 2024
+[08/18 07:01:20     21s] @(#)CDS: SGN 22.20-d001 (02-Jan-2023) (64 bit executable, TkQt5.9.1)
+[08/18 07:01:20     21s] @(#)CDS: RCDB 11.15.0
+[08/18 07:01:20     21s] @(#)CDS: STYLUS 22.15-s003_1 (04/04/2024 05:58 PDT)
+[08/18 07:01:20     21s] @(#)CDS: IntegrityPlanner-22.17-15746 (22.17) (2024-07-03 11:16:10+0800)
+[08/18 07:01:20     21s] Create and set the environment variable TMPDIR to /home/hah013/Basic_SoC_Implementation/5_APR/7_APR/1_TASK/1_LOGIC_CIRCUIT/2_Seq_logic/1_SR_latch_with_NOR_gates/innovus_temp_278752_4cca0957-e815-4347-85de-cdc96e2c7aae_kopo-seongnam_hah013_EBJZbA.
+
+[08/18 07:01:20     21s] Create and set the environment variable TMPDIR to /home/hah013/Basic_SoC_Implementation/5_APR/7_APR/1_TASK/1_LOGIC_CIRCUIT/2_Seq_logic/1_SR_latch_with_NOR_gates/innovus_temp_278752_4cca0957-e815-4347-85de-cdc96e2c7aae_kopo-seongnam_hah013_EBJZbA.
+[08/18 07:01:20     21s] 
+[08/18 07:01:20     21s] Change the soft stacksize limit to 0.2%RAM (770 mbytes). Set global soft_stack_size_limit to change the value.
+[08/18 07:01:22     23s] 
+[08/18 07:01:22     23s] **INFO:  MMMC transition support version v31-84 
+[08/18 07:01:22     23s] 
+[08/18 07:01:26     26s] @innovus 1> exit
+
+[08/18 07:06:48    117s] *** Memory Usage v#1 (Current mem = 1630.125M, initial mem = 654.375M) ***
+[08/18 07:06:48    117s] *** Message Summary: 0 warning(s), 0 error(s)
+[08/18 07:06:48    117s] 
+[08/18 07:06:48    117s] --- Ending "Innovus" (totcpu=0:01:57, real=0:05:50, mem=1630.1M) ---

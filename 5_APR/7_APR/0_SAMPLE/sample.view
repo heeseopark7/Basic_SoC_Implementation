@@ -30,7 +30,7 @@ create_delay_corner -name min_delay\
 
 create_constraint_mode -name sdc_cons\
    -sdc_files\
-    /home/hah013/Basic_SoC_Implementation/3_SYN/5_SYN/4_COMB_LOGIC/1_MUX/outputs/gpio_mux_sdc.sdc
+    /home/hah013/Basic_SoC_Implementation/3_SYN/5_SYN/1_TAST/1_LOGIC_CIRCUIT/2_Seq_logic/1_SR_latch_with_NOR_gates
 
 create_analysis_view -name wc -constraint_mode sdc_cons -delay_corner max_delay
 create_analysis_view -name bc -constraint_mode sdc_cons -delay_corner min_delay
