@@ -1,7 +1,7 @@
 set_db init_lib_search_path /home/hah013/Basic_SoC_Implementation/3_SYN/1_LIB
-set_db init_hdl_search_path /home/hah013/Basic_SoC_Implementation/1_RTL/4_COMB_LOGIC/4_COMPARATOR
+set_db init_hdl_search_path /home/hah013/Basic_SoC_Implementation/1_RTL/1_TASK/1_LOGIC_CIRCUIT/2_Seq_logic/3_SR_latch_with_control_input
 read_libs slow_vdd1v0_basicCells.lib
-read_hdl comparator.v
+read_hdl sr_latch_en_3.v
 
 elaborate
 
@@ -19,5 +19,5 @@ report_power > ./reports/rpt_power.rpt
 report_area > ./reports/rpt_area.rpt
 report_qor > ./reports/rpt_qor.rpt
 
-write_hdl > ./outputs/comparator_netlist.v
-write_sdc > ./outputs/comparator_final.sdc
+write_hdl > ./outputs/sr_latch_en_3_netlist.v
+write_sdc > ./outputs/sr_latch_en_3_final.sdc

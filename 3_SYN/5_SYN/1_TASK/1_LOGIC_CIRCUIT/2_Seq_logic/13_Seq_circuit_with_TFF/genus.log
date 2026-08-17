@@ -1,0 +1,71 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2024 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+[04:44:54.163241] Configured Lic search path (22.01-s003): 5280@172.31.52.241
+
+Version: 22.17-s071_1, built Wed Sep 11 20:37:05 PDT 2024
+Options: -files my_syn.tcl 
+Date:    Tue Aug 18 04:44:54 2026
+Host:    kopo-seongnam (x86_64 w/Linux 3.10.0-1160.el7.x86_64) (20cores*80cpus*2physical cpus*Intel(R) Xeon(R) Gold 5218R CPU @ 2.10GHz 28160KB) (394624392KB)
+PID:     256347
+OS:      CentOS Linux release 7.9.2009 (Core)
+
+Checking out license: Genus_Synthesis
+[04:44:54.109208] Periodic Lic check successful
+[04:44:54.109219] Feature usage summary:
+[04:44:54.109224] Genus_Synthesis
+
+
+
+***********************************************************************************************************
+***********************************************************************************************************
+
+
+
+Finished executable startup (1 second elapsed).
+
+Loading tool scripts...
+Finished loading tool scripts (13 seconds elapsed).
+
+#@ Processing -files option
+@genus 1> source my_syn.tcl
+#@ Begin verbose source ./my_syn.tcl
+@file(my_syn.tcl) 1: set_db init_lib_search_path /home/hah013/Basic_SoC_Implementation/3_SYN/1_LIB
+  Setting attribute of root '/': 'init_lib_search_path' = /home/hah013/Basic_SoC_Implementation/3_SYN/1_LIB
+@file(my_syn.tcl) 2: set_db init_hdl_search_path /home/hah013/Basic_SoC_Implementation/1_RTL/1_TASK/1_LOGIC_CIRCUIT/2_Seq_logic/13_Seq_circuit_with_TFF
+  Setting attribute of root '/': 'init_hdl_search_path' = /home/hah013/Basic_SoC_Implementation/1_RTL/1_TASK/1_LOGIC_CIRCUIT/2_Seq_logic/13_Seq_circuit_with_TFF
+@file(my_syn.tcl) 3: read_libs slow_vdd1v0_basicCells.lib
+
+  Message Summary for Library slow_vdd1v0_basicCells.lib:
+  *******************************************************
+  Missing a function attribute in the output pin definition. [LBR-518]: 1
+  *******************************************************
+ 
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 0.900000, 125.000000) in library 'slow_vdd1v0_basicCells.lib'.
+        : The nominal operating condition is represented, either by the nominal PVT values specified in the library source (via nom_process,nom_voltage and nom_temperature respectively), or by the default PVT values (1.0,1.0,1.0).
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'ANTENNA' must have an output pin.
+        : Add the missing output pin(s), then reload the library. Else the library cell will be marked as timing model i.e. unusable. Timing_model means that the cell does not have any defined function. If there is no output pin, Genus will mark library cell as unusable i.e. the attribute 'usable' will be marked to 'false' on the libcell. Therefore, the cell is not used for mapping and it will not be picked up from the library for synthesis. If you query the attribute 'unusable_reason' on the libcell; result will be: 'Library cell has no output pins.'Note: The message LBR-9 is only for the logical pins and not for the power_ground pins. Genus will depend upon the output function defined in the pin group (output pin) of the cell, to use it for mapping. The pg_pin will not have any function defined.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'ANTENNA' must have an output pin.
+@file(my_syn.tcl) 4: read_hdl seq_tff_3.v
+         assign   w_TA = i_x & w_By ;
+                               |
+Error   : Reference to undeclared variable. A variable/parameter must be declared before it is referenced. [VLOGPT-20] [read_hdl]
+        : Symbol 'w_By' in file '/home/hah013/Basic_SoC_Implementation/1_RTL/1_TASK/1_LOGIC_CIRCUIT/2_Seq_logic/13_Seq_circuit_with_TFF/seq_tff_3.v' on line 15, column 32.
+        : Verilog module is using a parameter that is not defined in the module. You will get a notification for this, if you read the verilog file using the read_hdl command.
+#@ End verbose source ./my_syn.tcl
+1
+Encountered problems processing file: my_syn.tcl
+WARNING: This version of the tool is 704 days old.
+@genus:root: 2> gui_raise
+
+Lic Summary:
+[04:45:37.160304] Cdslmd servers: kopo-seongnam
+[04:45:37.160328] Feature usage summary:
+[04:45:37.160329] Genus_Synthesis
+
+Normal exit.

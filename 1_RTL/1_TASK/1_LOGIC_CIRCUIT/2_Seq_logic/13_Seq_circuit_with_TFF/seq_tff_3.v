@@ -10,12 +10,12 @@ module seq_tff_3 (
          input    i_Clk  ;
          input    i_nRst ;
          output   o_y    ;
-
-         wire     w_TA  ;
+	
+         wire     w_TA 	 ;
+	 reg	  w_By	 ;
          assign   w_TA = i_x & w_By ;
 
          reg      w_Ay  ;
-         reg      w_By  ;
          always@( posedge i_Clk or negedge i_nRst ) begin
          if (!i_nRst) begin
                   w_Ay <= 1'b0;
