@@ -1,0 +1,54 @@
+xmsim(64): 22.03-s012: (c) Copyright 1995-2023 Cadence Design Systems, Inc.
+TOOL:	xmsim(64)	22.03-s012: Started on Aug 18, 2026 at 10:22:17 KST
+xmsim
+    -MESS
+    tb_seq_detector
+    -gui
+
+xmsim: *W,NOMTDGUI: Multi-Threaded Dumping is disabled for interactive debug mode.
+
+-------------------------------------
+Relinquished control to SimVision...
+xcelium> 
+xcelium> database -open waves -into waves.shm -default
+Created default SHM database waves
+xcelium> probe -create -shm tb_seq_detector.t_Clk tb_seq_detector.t_nRst tb_seq_detector.t_x tb_seq_detector.t_y
+Created probe 1
+xcelium> run
+time=0 | nRst=0 x=0 state=00 | y=0
+time=12000 | nRst=1 x=1 state=00 | y=0
+time=15000 | nRst=1 x=1 state=01 | y=0
+time=22000 | nRst=1 x=0 state=01 | y=0
+time=25000 | nRst=1 x=0 state=00 | y=0
+time=32000 | nRst=1 x=1 state=00 | y=0
+time=35000 | nRst=1 x=1 state=01 | y=0
+time=45000 | nRst=1 x=1 state=11 | y=0
+time=52000 | nRst=1 x=0 state=11 | y=0
+time=55000 | nRst=1 x=0 state=00 | y=0
+time=62000 | nRst=1 x=1 state=00 | y=0
+time=65000 | nRst=1 x=1 state=01 | y=0
+time=75000 | nRst=1 x=1 state=11 | y=0
+time=85000 | nRst=1 x=1 state=10 | y=1
+time=92000 | nRst=1 x=0 state=10 | y=1
+time=95000 | nRst=1 x=0 state=00 | y=0
+time=102000 | nRst=1 x=1 state=00 | y=0
+time=105000 | nRst=1 x=1 state=01 | y=0
+time=115000 | nRst=1 x=1 state=11 | y=0
+time=125000 | nRst=1 x=1 state=10 | y=1
+time=152000 | nRst=1 x=0 state=10 | y=1
+time=155000 | nRst=1 x=0 state=00 | y=0
+time=162000 | nRst=1 x=1 state=00 | y=0
+time=165000 | nRst=1 x=1 state=01 | y=0
+time=175000 | nRst=1 x=1 state=11 | y=0
+time=185000 | nRst=0 x=1 state=00 | y=0
+time=191000 | nRst=1 x=1 state=00 | y=0
+time=195000 | nRst=1 x=1 state=01 | y=0
+time=205000 | nRst=1 x=1 state=11 | y=0
+time=215000 | nRst=1 x=1 state=10 | y=1
+time=221000 | nRst=1 x=0 state=10 | y=1
+time=225000 | nRst=1 x=0 state=00 | y=0
+Simulation complete via $finish(1) at time 231 NS + 0
+./tb_seq_detector.v:72                 $finish ;
+xcelium> ^C
+xcelium> exit
+TOOL:	xmsim(64)	22.03-s012: Exiting on Aug 18, 2026 at 10:22:43 KST  (total: 00:00:26)

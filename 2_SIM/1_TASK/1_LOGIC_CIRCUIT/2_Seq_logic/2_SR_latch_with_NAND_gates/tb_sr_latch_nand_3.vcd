@@ -1,0 +1,71 @@
+$date
+    Aug 18, 2026  09:22:36
+$end
+$version
+    TOOL:	xmsim(64)	22.03-s012
+$end
+$timescale
+    1 ps
+$end
+
+$scope module tb_sr_latch_nand_3 $end
+$var reg       1 !    t_S $end
+$var reg       1 "    t_R $end
+$var wire      1 #    t_Q  $end
+$var wire      1 $    t_Q_n  $end
+
+$scope module dut $end
+$var wire      1 %    i_S  $end
+$var wire      1 &    i_R  $end
+$var reg       1 '    o_Q $end
+$var reg       1 (    o_Q_n $end
+$upscope $end
+
+$upscope $end
+
+$enddefinitions $end
+$dumpvars
+0!
+1"
+1#
+0$
+0%
+1&
+1'
+0(
+$end
+#10000
+1!
+0"
+0&
+1%
+0'
+1(
+1$
+0#
+#20000
+1"
+1&
+#30000
+0!
+0%
+1'
+0(
+0$
+1#
+#40000
+1!
+1%
+#50000
+0!
+0"
+0&
+0%
+1(
+1$
+#60000
+1!
+1%
+0'
+0#
+#70000

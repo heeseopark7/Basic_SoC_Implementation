@@ -1,0 +1,40 @@
+xmsim(64): 22.03-s012: (c) Copyright 1995-2023 Cadence Design Systems, Inc.
+TOOL:	xmsim(64)	22.03-s012: Started on Aug 18, 2026 at 10:02:59 KST
+xmsim
+    -MESS
+    tb_d_ff_asyn_3
+    -gui
+
+xmsim: *W,NOMTDGUI: Multi-Threaded Dumping is disabled for interactive debug mode.
+
+-------------------------------------
+Relinquished control to SimVision...
+xcelium> 
+xcelium> database -open waves -into waves.shm -default
+Created default SHM database waves
+xcelium> probe -create -shm tb_d_ff_asyn_3.t_Clk tb_d_ff_asyn_3.t_D tb_d_ff_asyn_3.t_NQ tb_d_ff_asyn_3.t_Nrst tb_d_ff_asyn_3.t_Q
+Created probe 1
+xcelium> run
+time=0 | Nrst=0 clk=0 D=1 | Q=0 NQ=1
+time=5000 | Nrst=0 clk=1 D=1 | Q=0 NQ=1
+time=10000 | Nrst=0 clk=0 D=1 | Q=0 NQ=1
+time=12000 | Nrst=1 clk=0 D=1 | Q=0 NQ=1
+time=15000 | Nrst=1 clk=1 D=1 | Q=1 NQ=0
+time=20000 | Nrst=1 clk=0 D=1 | Q=1 NQ=0
+time=22000 | Nrst=1 clk=0 D=0 | Q=1 NQ=0
+time=25000 | Nrst=1 clk=1 D=0 | Q=0 NQ=1
+time=30000 | Nrst=1 clk=0 D=0 | Q=0 NQ=1
+time=32000 | Nrst=1 clk=0 D=1 | Q=0 NQ=1
+time=35000 | Nrst=1 clk=1 D=1 | Q=1 NQ=0
+time=40000 | Nrst=1 clk=0 D=1 | Q=1 NQ=0
+time=44000 | Nrst=0 clk=0 D=1 | Q=0 NQ=1
+time=45000 | Nrst=0 clk=1 D=1 | Q=0 NQ=1
+time=50000 | Nrst=1 clk=0 D=1 | Q=0 NQ=1
+time=55000 | Nrst=1 clk=1 D=1 | Q=1 NQ=0
+time=60000 | Nrst=1 clk=0 D=0 | Q=1 NQ=0
+time=65000 | Nrst=1 clk=1 D=0 | Q=0 NQ=1
+Simulation complete via $finish(1) at time 70 NS + 0
+./tb_d_ff_asyn_3.v:56                 $finish ;
+xcelium> ^C
+xcelium> exit
+TOOL:	xmsim(64)	22.03-s012: Exiting on Aug 18, 2026 at 10:03:23 KST  (total: 00:00:24)

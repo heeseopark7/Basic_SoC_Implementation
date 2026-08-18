@@ -1,0 +1,28 @@
+xmelab(64): 22.03-s012: (c) Copyright 1995-2023 Cadence Design Systems, Inc.
+TOOL:	xmelab(64)	22.03-s012: Started on Aug 18, 2026 at 09:22:11 KST
+xmelab
+    -MESS
+    -access rwc
+    tb_sr_latch_nand_3
+
+	Elaborating the design hierarchy:
+		Caching library 'work_lib' ....... Done
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		work_lib.sr_latch_nand_3:module <0x2cd91ed1>
+			streams:   1, words:  1675
+		work_lib.tb_sr_latch_nand_3:module <0x7e63cb26>
+			streams:   6, words:  9626
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:                 2       2
+		Registers:               4       4
+		Scalar wires:            4       -
+		Always blocks:           1       1
+		Initial blocks:          3       3
+		Pseudo assignments:      2       2
+		Simulation timescale:  1ps
+	Writing initial simulation snapshot: work_lib.tb_sr_latch_nand_3:module
+TOOL:	xmelab(64)	22.03-s012: Exiting on Aug 18, 2026 at 09:22:11 KST  (total: 00:00:00)

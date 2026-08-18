@@ -1,0 +1,113 @@
+$date
+    Aug 18, 2026  10:03:16
+$end
+$version
+    TOOL:	xmsim(64)	22.03-s012
+$end
+$timescale
+    1 ps
+$end
+
+$scope module tb_d_ff_asyn_3 $end
+$var reg       1 !    t_D $end
+$var reg       1 "    t_Clk $end
+$var reg       1 #    t_Nrst $end
+$var wire      1 $    t_Q  $end
+$var wire      1 %    t_NQ  $end
+
+$scope module dut $end
+$var wire      1 &    i_D  $end
+$var wire      1 '    i_Clk  $end
+$var wire      1 (    i_Nrst  $end
+$var reg       1 )    o_Q $end
+$var wire      1 %    o_NQ  $end
+$upscope $end
+
+$upscope $end
+
+$enddefinitions $end
+$dumpvars
+1!
+0"
+0#
+0$
+1%
+1&
+0'
+0(
+0)
+$end
+#5000
+1"
+1'
+#10000
+0"
+0'
+#12000
+1#
+1(
+#15000
+1"
+1'
+1)
+0%
+1$
+#20000
+0"
+0'
+#22000
+0!
+0&
+#25000
+1"
+1'
+0)
+1%
+0$
+#30000
+0"
+0'
+#32000
+1!
+1&
+#35000
+1"
+1'
+1)
+0%
+1$
+#40000
+0"
+0'
+#44000
+0#
+0(
+0)
+1%
+0$
+#45000
+1"
+1'
+#50000
+1#
+0"
+0'
+1(
+#55000
+1"
+1'
+1)
+0%
+1$
+#60000
+0!
+0"
+0'
+0&
+#65000
+1"
+1'
+0)
+1%
+0$
+#70000
